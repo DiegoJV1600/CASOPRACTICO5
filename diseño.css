@@ -1,0 +1,203 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+#menu {
+    width: 250px;
+    background-color: #1F2139;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+#menu h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#menu a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+#menu a:hover {
+    background-color: #555;
+}
+#contain {
+    margin-left: 290px;
+    padding: 20px;
+}
+#contain h2 {
+    color: #1F2139;
+}
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container-i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;    
+}
+#title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F2139;
+    margin-bottom: 10px;
+}
+#subtitle {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #3a3e64;
+    margin-bottom: 20px;
+}
+#links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#links-container a {
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+#tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#tabla-usuarios th, #tabla-usuarios td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+}
+#tabla-usuarios th {
+    background-color: #1F2139;
+    color: #fff;
+}
+#tabla-usuarios tr:nth-child(even)
+{
+    background-color: #f4f4f4;
+}
+#tabla-usuarios td:nth-child(1) {
+    color: #1F2139;
+    font-weight: bold;
+}
+#tabla-usuarios td:nth-child(2) {
+    color: #1F2139;
+    font-weight: bold;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+#userIdInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#searchButton {
+    padding: 10px;
+    background-color: #1F2139;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#searchButton:hover {
+    background-color: #3a3e64;
+}
+#countryNameInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#tabla-paises {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#tabla-paises th, #tabla-paises td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+}
+#tabla-paises th {
+    background-color: #1F2139;
+    color: #fff;
+}
+#tabla-paises tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+#tabla-paises td:nth-child(1) {
+    color: #1F2139;
+    font-weight: bold;
+}
+.container-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-card {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.image-card:hover {
+    transform: scale(1.05);
+}
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+.image-details {
+    padding: 10px;
+    background-color: #fff;
+}
+.image-details {
+    margin: 0;
+    color: #1F2139;
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    #menu {
+        width: 100%;
+        position: static;
+        height: auto;
+        box-shadow: none;
+    }
+    #contain {
+        margin-left: 0;
+    }
+}
